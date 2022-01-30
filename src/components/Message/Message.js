@@ -1,7 +1,9 @@
 import './Message.sass';
 
-export const Message = ({text}) => {
+export const Message = ({author, message}) => {
     return (
-    <p className="message">{text}</p>
+        <>
+            <p className="message"><span className="author-text">{author}</span>: {message}</p>
+        </>
     );   
 };
